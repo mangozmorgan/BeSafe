@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Crypto app</title>
+</head>
+<body>
+    <div class="divDeOuf">
+        <h1>Crypto App</h1>
+
+        <div class="off">
+           <h2>Cryptage</h2> 
+            <form class="uploadForm" action="/sendFile" method="post" enctype="multipart/form-data">
+                <textarea name="titleFile" id="titleFile" cols="30" rows="1"></textarea>    
+                <label for="uploadFichier">Upload tes fichiers ici </label>
+                <input type="file" onchange="getFileInfo()" name="uploadFichierInput" id="uploadFichierInput">
+                <label for="mdp">mot de passe</label>
+                <input type="text" name="mdp" id="mdp" >
+                <input type="submit" value="Envoyer">
+            </form>
+        </div>
+        </div>
+        <p>Se connecter va te permettre de pouvoir lier directement le cloud de ton choix avec notre application et surtout que tu n'est pas a te reconnecter a chacun d'eux a chaques fois que tu souhaite crypter et transferer un fichier </p>
+
+    
+        <form class="off" id="registerForm" action="" method="post">
+            <h2>Inscription</h2>
+            <label for="pseudoRegister">Pseudo</label>
+            <input type="text" name="pseudoRegister" id="pseudoRegister">
+            <label for="emailRegister">Email</label>
+            <input type="email" name="emailRegister" id="emailRegister">
+            <label for="mdpRegister">Mot de passe </label>
+            <input type="password" name="mdpRegister" id="mdpRegister">
+            <label for="mdpConfirmRegister">Confirmation mot de passe </label>
+            <input type="password" name="mdpConfirmRegister" id="mdpConfirmRegister">
+            <input type="submit" value="M'enregistrer">
+        </form>
+
+        <form class="off" id="loginForm" action="" method="post">
+            <h2>Connexion</h2>
+            <label for="pseudoLogin">Pseudo</label>
+            <input type="text" name="peudoLogin" id="peudoLogin">
+            <label for="mdpLogin">Mot de passe</label>
+            <input type="password" name="mdpLogin" id="mdpLogin">
+            <input type="submit" value="Se connecter">
+        </form>
+
+        <div class="off">
+            <h2>Decryptage</h2> 
+             <form class="uploadForm" action="/decryptFile" method="post" enctype="multipart/form-data">
+                 <textarea name="titleFile2" id="titleFile2" cols="30" rows="1"></textarea>    
+                 <label for="test">Upload tes fichiers ici </label>
+                 <input type="file" onchange="getFileInfo2()" name="uploadFichierInput2" id="uploadFichierInput2">
+                 <label for="mdp2">mot de passe</label>
+                 <input type="text" name="mdp2" id="mdp2" >
+                 <input type="submit" value="Envoyer">
+             </form>
+         </div>
+         </div>
+
+         <form class="cryptoForm" action="/test" method="post">
+        <label for="test">nom du fichier de base </label>    
+        <input type="text" name="test" id="test">
+        <label for="finalName">nom final du fichier</label>
+        <input type="text" name="finalName" id="finalName">
+        <label for="mdp3">mot de passe </label>
+        <input type="text" name="mdp3" id="mdp3">
+        <input type="submit" value="envoyer">
+    </form>
+    
+
+        
+    </div>
+<button onclick="python()">Test</button>
+<a href="javascript:void(0)" id="render-link">Upload sur Google Drive</a>
+    <div id="savetodrive-div"></div>
+        <a href="/fofo1.rar">file</a>
+</body>
+
+
+
+
+<script src="/JS/googleDrive.js"></script>
+</html>

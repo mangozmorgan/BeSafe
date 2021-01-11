@@ -1,0 +1,33 @@
+{
+  "name": "besafe",
+  "version": "1.0.0",
+  "description": "crypt client for cloud",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-formidable": "^1.2.0",
+    "express.js": "^1.0.0",
+    "folder-encrypt": "^1.1.7",
+    "fs": "0.0.1-security",
+    "http": "0.0.1-security",
+    "https": "^1.0.0",
+    "mongodb": "^3.6.3",
+    "python-shell": "^2.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mangozmorgan/BeSafe.git"
+  },
+  "author": "mangozmorgan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mangozmorgan/BeSafe/issues"
+  },
+  "homepage": "https://github.com/mangozmorgan/BeSafe#readme"
+}

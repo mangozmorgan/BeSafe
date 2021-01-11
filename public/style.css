@@ -1,0 +1,59 @@
+
+.divDeOuf{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.uploadForm{
+    display: flex;
+    flex-direction: column;
+}
+
+.cryptoForm{
+    width: 70%;
+    margin-top: 2vw;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 1vw;
+   
+}
+.cryptoForm label{
+    margin: 0.5vw;
+}
+/*
+#registerForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: max-content;
+    padding: 2vw 3vw 2vw 3vw;
+}
+
+#registerForm label ,input {
+    margin: 0.2vw;
+}
+
+#loginForm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    width: max-content;
+    padding: 2vw 3vw 2vw 3vw;
+}*/
+.cryptage{
+    border: 1px solid black;
+    padding:2vw
+}
+.off{
+    display: none;
+}
